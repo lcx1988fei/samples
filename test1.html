@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Test Sample</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+
+<body>
+	<h1>What to buy</h1>
+	<p title="a gentle reminder" id="test">Don't forget to buy this stuff.</p>
+	<ul id="purchases">
+		<li>A tin of beans</li>
+		<li class="sale">Cheese</li>
+		<li class="sale important">Milk</li>
+	</ul>
+	<script>
+		var paras = document.getElementsByTagName("p");
+		//alert(paras[0].getAttribute("title"));
+		paras[0].setAttribute("title", "test1");
+		alert(paras[0].getAttribute("title"));
+		
+	</script>
+</body>
+
+</html>
